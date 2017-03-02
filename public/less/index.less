@@ -1,0 +1,28 @@
+@color_red: #e72b41;
+@color_light_gray: #f0f0f0;
+@color_dark_gray: #909090;
+
+body,
+.container{width: 100%; height: 200px}
+
+.mainNav{display:flex;height:49px;text-align:center;}
+.mainNav a{vertical-align: middle;flex:1;background-color: white; color: @color_dark_gray; }
+.mainNav a:hover{background-color: white;  color: @color_red ; text-decoration: none;}
+.mainNav a.active{background-color: white; color: @color_red;}
+.mainNav i{display: block;width: 100%;height: 26px; background-repeat: no-repeat;
+background-position: center; background-size: 26px 26px; margin-top: 3px;}
+.mainNav .nav-home{background-image: url("../images/newshouye@2x.png")}
+.mainNav .nav-home:hover{background-image: url("../images/newshouye-on@2x.png")}
+.mainNav .nav-home.active{background-image: url("../images/newshouye-on@2x.png")}
+.mainNav .nav-list{background-image: url("../images/newfenlei@2x.png")}
+.mainNav .nav-list:hover{background-image: url("../images/newfenlei-on@2x.png")}
+.mainNav .nav-list.active{background-image: url("../images/newfenlei-on@2x.png")}
+.mainNav .nav-share{background-image: url("../images/newguangshaidan@2x.png")}
+.mainNav .nav-share:hover{background-image: url("../images/newguangshaidan-on@2x.png")}
+.mainNav .nav-share.active{background-image: url("../images/newguangshaidan-on@2x.png")}
+.mainNav .nav-car{background-image: url("../images/newgouwuche@2x.png")}
+.mainNav .nav-car:hover{background-image: url("../images/newgouwuche-on@2x.png")}
+.mainNav .nav-car.active{background-image: url("../images/newgouwuche-on@2x.png")}
+.mainNav .nav-center{background-image: url("../images/newwode@2x.png")}
+.mainNav .nav-center:hover{background-image: url("../images/newwode-on@2x.png")}
+.mainNav .nav-center.active{background-image: url("../images/newwode-on@2x.png")}

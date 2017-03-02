@@ -1,0 +1,88 @@
+/* 通用样式 */
+*,
+::before,
+::after{
+	font-size: 14px;
+
+	/*  */
+	margin: 0;
+	padding: 0;
+
+	/* 点击高亮效果 *//* 手指点击 清除默认的 高亮效果 透明 */
+	-webkit-tap-highlight-color: transparent ;
+
+	/* 盒子模型 */
+	/* 样式输入完毕 在后面tab */
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	/* 统一设置文字  sans-serif 移动端 的默认字体 */
+	font-family: '微软雅黑',sans-serif;
+}
+
+/* input标签 去掉默认样式 */
+input{
+	border: none;
+	-webkit-appearance: none;
+}
+
+/* a标签的下划线 */
+a{
+	text-decoration: none;
+}
+
+/* 去掉小圆点 */
+ol,ul{
+	list-style: none;
+}
+
+/* 清除浮动 */
+.f_l{
+	float: left;
+}
+.f_r{
+	float: right;
+}
+
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after{
+	content:'';
+	display: block;
+	line-height: 0;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+/* 边框的 通用样式 */
+.b_l{
+	border-left: 1px solid #eee;
+}
+.b_r{
+	border-right: 1px solid #eee;
+}
+.b_t{
+	border-top: 1px solid #eee;
+}
+.b_b{
+	border-bottom: 1px solid #eee;
+}
+
+.ub{
+	display: -webkit-box;display: -moz-box;display: box
+}
+.ub-ac{
+	-webkit-box-align: center;-moz-box-align: center;-o-box-align: center;box-align: center
+}.ub-pc{
+	 -webkit-box-pack: center;-moz-box-pack: center;-o-box-pack: center;box-pack: center
+ }
+.ub-ver{
+	-webkit-box-orient: vertical;-moz-box-orient: vertical;-o-box-orient: vertical;box-orient: vertical
+}.ub-rev{
+	 -webkit-box-direction: reverse;-moz-box-direction: reverse;-o-box-direction: reverse;box-direction: reverse
+ }
+.ub-f1{
+	-webkit-box-flex: 1;-moz-box-flex: 1;box-flex: 1
+}
+

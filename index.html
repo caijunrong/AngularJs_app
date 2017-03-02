@@ -2,9 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>比呀比海外购</title>
+
+    <link rel="stylesheet" href="components/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="public/css/base.css">
+
+    <script type="text/javascript" src="components/less.js"></script>
+    <link rel="stylesheet" href="public/less/index.css">
+    <script type="text/javascript" src="components/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="components/angular/angular.js"></script>
+    <script type="text/javascript" src="components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="components/jquery.min.js"></script>
+    <script type="text/javascript" src="components/dropload.js"></script>
+
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/homeControllers.js"></script>
+
 </head>
-<body>
+<body ng-app="myMall">
+
+    <div class="container" ng-view></div>
+
+    <footer class="navbar navbar-default navbar-fixed-bottom mainNav">
+        <a href="#/home" ng-class="{active:page.current=='home'}">
+            <i class="nav-home" ng-class="{active:page.current=='home'}"></i>
+            首页
+        </a>
+        <a href="#/list" ng-class="{active:page.current=='list'}">
+            <i class="nav-list" ng-class="{active:page.current=='list'}"></i>
+            分类
+        </a>
+        <a href="#/share" ng-class="{active:page.current=='share'}">
+            <i class="nav-share" ng-class="{active:page.current=='share'}"></i>
+            晒单
+        </a>
+
+        <a href="#/shopcar"  ng-class="{active:page.current=='shopcar'}">
+            <i class="nav-car" ng-class="{active:page.current=='shopcar'}"></i>
+            购物车
+        </a>
+        <a href="#/center" ng-class="{active:page.current=='center'}">
+            <i class="nav-center" ng-class="{active:page.current=='center'}"></i>
+            个人中心
+        </a>
+
+    </footer>
 
 </body>
 </html>
